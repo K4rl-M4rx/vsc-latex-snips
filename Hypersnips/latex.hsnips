@@ -1,0 +1,48 @@
+// Other shortcut
+
+snippet abox "Box" iA
+% ``rv = '┌' + '─'.repeat(t[0].length + 12) + '┐'``
+% ``rv = '|' + ' '.repeat(t[0].length + 12) + '|'``
+% │      $1      │
+% ``rv = '|' + ' '.repeat(t[0].length + 12) + '|'``
+% ``rv = '└' + '─'.repeat(t[0].length + 12) + '┘'``
+endsnippet
+
+snippet ebox "Box" iA
+% ``rv = '='.repeat(t[0].length + 12)``
+%       $1      
+% ``rv = '='.repeat(t[0].length + 12)``
+endsnippet
+
+snippet %% "annotate" A
+%──────────────────────────────────────────────────────────────────────%
+endsnippet
+
+snippet %= "annotate" A
+%======================================================================%
+endsnippet
+
+snippet %t "annotate" A
+%``rv = '─'.repeat(34 - Math.floor(t[0].length/2))`` $1 ``rv = '─'.repeat(34 - Math.ceil(t[0].length/2))``%
+endsnippet
+
+snippet %e "annotate" A
+%``rv = '='.repeat(34 - Math.floor(t[0].length/2))`` $1 ``rv = '='.repeat(34 - Math.ceil(t[0].length/2))``%
+endsnippet
+
+snippet dategreeting "Gives you the current date!"
+Hello from your hsnip at ``rv = new Date().toDateString()``!
+endsnippet
+
+
+snippet `(\\?[a-zA-Z]\w*)(hong|HONG)` "red" iA
+\red{``rv = m[1]``}
+endsnippet 
+
+snippet `(\\?[a-zA-Z]\w*)(lan|LAN)` "blue" iA
+\blue{``rv = m[1]``}
+endsnippet 
+
+snippet `(\\?[a-zA-Z]\w*)(lv|LV)` "green" iA
+\green{``rv = m[1]``}
+endsnippet 
